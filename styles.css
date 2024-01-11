@@ -1,0 +1,159 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #4CAF50;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+a:hover{
+    color: gold;
+}
+
+#hero {
+    text-align: center;
+    
+}
+
+#hero img {
+    width: 100%;
+    height: auto;
+}
+
+.rental {
+    margin-bottom: 2rem;
+    display: grid;
+    place-items: center;
+}
+
+.rental img {
+    width: 50%;
+    border-radius: 1rem;
+}
+
+.book-now-btn {
+    background-color: #FF9800;
+    color: #fff;
+    padding: 1rem 2rem;
+    border: none;
+    cursor: pointer;
+}
+
+#contact {
+    background-color: #f0f0f0;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form_content {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button.submit-btn {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button.submit-btn:hover {
+    background-color: #45a049;
+}
+
+
+
+/* Add this to your existing CSS or create a new stylesheet */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    nav ul {
+        text-align: center;
+    }
+
+    nav li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #hero h2 {
+        font-size: 1.5em;
+    }
+
+    .rental {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #hero h2 {
+        font-size: 1.2em;
+    }
+
+    form {
+        width: 90%;
+    }
+}

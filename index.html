@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vacation Rentals</title>
+    <!-- Include flatpickr library -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr@4.6.6/dist/flatpickr.min.css"
+    />
+    
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>Vacation Paradise</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#rentals">Rentals</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+      <img src="images/beach-image.jpg" alt="Beach Image" />
+      <h2>Welcome to Your Dream Vacation</h2>
+    </section>
+
+    <!-- Featured Vacation Rentals -->
+    <section id="rentals">
+      <div class="rental">
+        <img src="images/rental1.jpg" alt="Rental 1" />
+        <h3>Beachfront Villa</h3>
+        <p>
+          Escape to this luxurious beachfront villa with stunning ocean views.
+        </p>
+        <button class="book-now-btn">Book Now</button>
+      </div>
+      <div class="rental">
+        <img src="images/rental2.jpg" alt="Rental 2" />
+        <h3>Mountain Cabin</h3>
+        <p>
+          Experience the serenity of nature in this cozy mountain cabin retreat.
+        </p>
+        <button class="book-now-btn">Book Now</button>
+      </div>
+      <div class="rental">
+        <img src="images/rental3.jpg" alt="Rental 3" />
+        <h3>Tropical Bungalow</h3>
+        <p>Relax in a charming bungalow surrounded by lush tropical gardens.</p>
+        <button class="book-now-btn">Book Now</button>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form>
+        <div class="form_content">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+
+        <div class="form_content">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="form_content">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+
+        <div class="form_content">
+          <label for="check_in_date">Check-in Date:</label>
+          <input type="date" id="check_in_date" name="check_in_date" required />
+        </div>
+
+        <button type="submit" class="submit-btn">Submit Inquiry</button>
+      </form>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h1>Vacation Paradise</h1>
+            </div>
+           
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year"></span> Vacation Paradise. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr@4.6.6/dist/flatpickr.min.js"></script>
+  </body>
+</html>
